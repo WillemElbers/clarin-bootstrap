@@ -1,0 +1,67 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Override for default variable values (though functions won't be available)
+
+@import "clarin-fonts";
+
+$font-family-sans-serif:      "Source Sans Pro", Calibri, Arial, Helvetica sans-serif;
+$font-family-monospace:       "Source Code Pro", "Liberation Mono", "Courier New", monospace;
+
+$black:                       #000;
+$white:                       #fff;
+
+$primary:                     #0080AA; //RGB 0, 128, 170
+$primary-highlight:           #07426E; //RGB 7, 66, 110"
+$navbar-light-color:          rgba(0, 0, 0, 0.03);
+$headings-color:               $primary;
+
+$link-color:                  $primary;
+$link-hover-color:            $primary-highlight;
+
+$bg-light:                    rgba($black, .03);
+$card-cap-bg:                 rgba($black, .03);
+
+$navbar-light-color:          rgba($black, .03);
+/*$btn-color: $white;*/
+/*
+$nav-link-color:              $black;
+$nav-link-hover-color:        $black;
+$navbar-light-brand-color:          $black;
+$navbar-light-brand-hover-color: $black;
+*/
+
+//Import all of bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Additional custom code here
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override navbar styles */
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: $bg-light;
+  border-bottom: 1px solid #000;
+}
+
+.navbar-brand {
+  color: $black;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+}
+
+.navbar-brand a:visited {
+  color: $black;
+  text-decoration: none;
+}
+
+.btn-primary {
+  --bs-btn-color: #FFF;
+}
