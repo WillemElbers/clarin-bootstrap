@@ -65,3 +65,13 @@ body {
 .btn-primary {
   --bs-btn-color: #FFF;
 }
+
+.btn-primary:hover {
+  --bs-btn-hover-color: #FFF !important;
+  --bs-btn-color: #FFF;
+}
+
+.btn:hover {
+  --bs-btn-hover-color: #FFF !important;
+  --bs-btn-color: #FFF;
+}
