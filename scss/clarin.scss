@@ -19,10 +19,9 @@ $headings-color:               $primary;
 $link-color:                  $primary;
 $link-hover-color:            $primary-highlight;
 
-$bg-light:                    rgba($black, .03);
 $card-cap-bg:                 rgba($black, .03);
-
 $navbar-light-color:          rgba($black, .03);
+
 /*$btn-color: $white;*/
 /*
 $nav-link-color:              $black;
@@ -45,8 +44,8 @@ body {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: $bg-light;
-  border-bottom: 1px solid #000;
+  background-color: rgba($black, .03);
+  border-bottom: 1px solid rgb(213,213,213);
 }
 
 .navbar-brand {
@@ -65,13 +64,13 @@ body {
 .btn-primary {
   --bs-btn-color: #FFF;
 }
-
+/*
 .btn-primary:hover {
   --bs-btn-hover-color: #FFF !important;
   --bs-btn-color: #FFF;
 }
-
+*/
 .btn:hover {
-  --bs-btn-hover-color: #FFF !important;
+  --bs-btn-hover-color: #FFF;
   --bs-btn-color: #FFF;
 }
